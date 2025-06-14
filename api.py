@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 from fastapi import FastAPI, File, UploadFile, HTTPException, Depends
 from fastapi.responses import JSONResponse, StreamingResponse
 from fastapi.middleware.cors import CORSMiddleware
@@ -7,10 +11,10 @@ import io
 import json
 import os
 import bcrypt
-from .components.exportar_pdf import exportar_dashboard_pdf
-from .logic.procesar_archivo import procesar_archivo, leer_csv_robusto
-from .logic.filtros import aplicar_filtros
-from .logic.feedback import analizar_grupo, recomendar
+from gpt.components.exportar_pdf import exportar_dashboard_pdf
+from gpt.logic.procesar_archivo import procesar_archivo, leer_csv_robusto
+from gpt.logic.filtros import aplicar_filtros
+from gpt.logic.feedback import analizar_grupo, recomendar
 
 app = FastAPI()
 
