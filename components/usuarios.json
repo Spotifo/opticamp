@@ -1,0 +1,12 @@
+[
+  {
+    "usuario": "pro",
+    "password_hash": "$2b$12$tRBpfiX/GsUss73XgTzhFOcwABiytF.tKBakZu8eF/6K8gdhR1vEe",
+    "plan": "PRO"
+  },
+  {
+    "usuario": "basic",
+    "password_hash": "$2b$12$6dvO6oroK.Bj8Dihq6jN3OdireGh2gr5xAwiYKKVImudnespBz4mW",
+    "plan": "BASIC"
+  }
+]

@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+python-multipart
+pandas
+jinja2
+reportlab
+bcrypt

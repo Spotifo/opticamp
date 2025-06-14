@@ -1,0 +1,127 @@
+/*
+Estilos globales y consistentes para el dashboard avanzado
+*/
+body, .stApp {
+    background: #f8fafc !important;
+    color: #222 !important;
+}
+section[data-testid="stSidebar"] {
+    background: #e5e7eb !important; /* gris un poco oscuro */
+    color: #111 !important;
+}
+div[data-testid='stMetric'] > div, div[data-testid='stMetricValue'], div[data-testid='stMetricDelta'] {
+    color: #222 !important;
+}
+.stButton>button {
+    background: #2563eb !important;
+    color: #fff !important;
+    border-radius: 8px !important;
+    font-weight: 600;
+    border: none;
+    padding: 0.5rem 1.2rem;
+}
+.stButton>button:hover {
+    background: #1e40af !important;
+}
+.stTextInput>div>div>input {
+    background: #fff !important;
+    color: #222 !important;
+    border-radius: 8px !important;
+    border: 1px solid #cbd5e1 !important;
+    padding: 0.5rem 1rem !important;
+}
+.stDataFrame, .stTable {
+    background: #fff !important;
+    color: #222 !important;
+}
+/* Forzar color negro en todo el texto del dashboard */
+body, .stApp, .stMarkdown, .stText, .stDataFrame, .stTable, .stExpander, .stButton, .stMetric, .stForm, .stAlert, .stSidebar, .stDownloadButton, .stFileUploader, .stSlider, .stCheckbox, .stRadio, .stTextInput, .stNumberInput, .stDateInput, .stTimeInput, .stColorPicker, .stCodeBlock, .stPlotlyChart, .stCard, .stContainer, .stColumn, .stRow, .stTabs, .stTab {
+    color: #111 !important;
+}
+/* Forzar color negro en los textos de los gráficos Plotly */
+.g-xtick text, .g-ytick text, .g-title, .g-legend text, .g-annotation text {
+    fill: #111 !important;
+    color: #111 !important;
+}
+/* Forzar color negro en los títulos y textos de los cards y métricas */
+.card, .card-title, .stMetric, .stMetricValue, .stMetricDelta {
+    color: #111 !important;
+}
+/* Cambia la barra superior de Streamlit a gris clarito */
+header[data-testid="stHeader"] {
+    background: #f3f4f6 !important;
+    color: #111 !important;
+    box-shadow: 0 2px 8px #0001 !important;
+}
+
+/* --- ESTILOS GLOBALES Y CONSISTENTES PARA SIDEBAR Y DASHBOARD --- */
+
+/* Sidebar: fondo gris oscuro, texto negro */
+section[data-testid="stSidebar"] {
+    background: #e5e7eb !important;
+    color: #111 !important;
+}
+section[data-testid="stSidebar"] * {
+    color: #111 !important;
+}
+
+/* Todos los selectbox y menús desplegables: fondo blanco, texto negro */
+.stSelectbox, .stSelectbox *,
+section[data-testid="stSidebar"] .stSelectbox, section[data-testid="stSidebar"] .stSelectbox * {
+    background: #fff !important;
+    color: #111 !important;
+}
+.stSelectbox ul[role="listbox"] li[aria-selected="true"],
+section[data-testid="stSidebar"] .stSelectbox ul[role="listbox"] li[aria-selected="true"] {
+    background: #e0e7ef !important;
+    color: #111 !important;
+}
+
+/* Input de texto y número: fondo blanco, texto negro */
+.stTextInput input, .stNumberInput input,
+section[data-testid="stSidebar"] .stTextInput input, section[data-testid="stSidebar"] .stNumberInput input {
+    background: #fff !important;
+    color: #111 !important;
+}
+
+/* Labels, títulos y textos: siempre negro */
+section[data-testid="stSidebar"] label, section[data-testid="stSidebar"] label *,
+section[data-testid="stSidebar"] p, section[data-testid="stSidebar"] small, section[data-testid="stSidebar"] h1, section[data-testid="stSidebar"] h2, section[data-testid="stSidebar"] h3, section[data-testid="stSidebar"] h4, section[data-testid="stSidebar"] h5, section[data-testid="stSidebar"] h6 {
+    color: #111 !important;
+}
+
+/* Botón 'Subir CSV' azul, texto blanco, negrita */
+section[data-testid="stSidebar"] button, section[data-testid="stSidebar"] .stButton>button {
+    background: #2563eb !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    border-radius: 8px !important;
+    border: none !important;
+    padding: 0.5rem 1.2rem !important;
+    font-size: 1rem !important;
+}
+section[data-testid="stSidebar"] button:hover, section[data-testid="stSidebar"] .stButton>button:hover {
+    background: #1e40af !important;
+}
+
+/* Recuadro de archivo subido correctamente: verde fuerte, texto blanco */
+section.stSidebar .stAlert, section[data-testid="stSidebar"] .stAlert {
+    background: #059669 !important;
+    color: #fff !important;
+    border-radius: 8px !important;
+    font-weight: 700 !important;
+}
+
+/* Menús desplegables globales fuera de sidebar: fondo blanco, texto negro */
+body .stSelectbox, body .stSelectbox *,
+body ul[role="listbox"], body ul[role="listbox"] *,
+body .stSelectbox ul[role="listbox"] li {
+    background: #fff !important;
+    color: #111 !important;
+}
+body .stSelectbox ul[role="listbox"] li[aria-selected="true"] {
+    background: #e0e7ef !important;
+    color: #111 !important;
+}
+
+/* Eliminar reglas ultra-específicas innecesarias para evitar inconsistencias al recargar o cambiar el contenido */
