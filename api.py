@@ -11,10 +11,10 @@ import io
 import json
 import os
 import bcrypt
-from .components.exportar_pdf import exportar_dashboard_pdf
-from .logic.procesar_archivo import procesar_archivo, leer_csv_robusto
-from .logic.filtros import aplicar_filtros
-from .logic.feedback import analizar_grupo, recomendar
+from gpt.components.exportar_pdf import exportar_dashboard_pdf
+from gpt.logic.procesar_archivo import procesar_archivo, leer_csv_robusto
+from gpt.logic.filtros import aplicar_filtros
+from gpt.logic.feedback import analizar_grupo, recomendar
 
 app = FastAPI()
 
